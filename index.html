@@ -7,11 +7,37 @@
     <title>value_checker_m1</title>
 </head>
 
-
 <body>
     <div id="flex">
-        <div id ="square"></div>
-        <div id ="square"></div>
+        <div class="square" id="leftSquare"></div>
+        <div class="square" id="rightSquare"></div>
     </div>
+
+    <div class="button-container">
+        <button class="custom-button" id="greaterButton" onclick="checkAnswer('>')">></button>
+        <button class="custom-button" id="equalButton" onclick="checkAnswer('=')">=</button>
+        <button class="custom-button" id="lessButton" onclick="checkAnswer('<')"><</button>
+    </div>
+
+    <div class="button-container">
+        <button class="generate-button" onclick="resetGame()">Reset</button>
+    </div>
+
+    <div class="stat-box">
+        <div class="stat-item">
+            <span class="stat-label">Correct:</span>
+            <span class="stat-value" id="correct-value">0</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Incorrect:</span>
+            <span class="stat-value" id="incorrect-value">0</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Percentage Correct:</span>
+            <span class="stat-value" id="percentage-value">0%</span>
+        </div>
+    </div>
+
+    <script src="./javascript/javascript.js"></script>
 </body>
 </html>
