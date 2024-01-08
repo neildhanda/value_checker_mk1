@@ -70,9 +70,9 @@ function resetGame() {
 function compareValues() {
     switch (userChoice) {
         case '>':
-            return colorData.greyscaleValueLeft < colorData.greyscaleValueRight;
-        case '<':
             return colorData.greyscaleValueLeft > colorData.greyscaleValueRight;
+        case '<':
+            return colorData.greyscaleValueLeft < colorData.greyscaleValueRight;
         case '=':
             return colorData.greyscaleValueLeft === colorData.greyscaleValueRight;
         default:
@@ -100,7 +100,7 @@ const percentageValueElement = document.getElementById("percentage-value");
 
 
 function checkAnswer() {
-    const threshold = 1; // You can adjust this threshold based on your preference
+    const threshold = 2; // You can adjust this threshold based on your preference
 
     // Ensure userChoice is valid
     if (userChoice === '*' || userChoice === undefined) {
@@ -112,14 +112,14 @@ function checkAnswer() {
     const isCorrect = compareValues(colorData.greyscaleValueLeft, colorData.greyscaleValueRight, userChoice, threshold);
 
     if (isCorrect) {
-        console.log("Correct!\nEND_ROUND\n");
+        console.log("Correct!\nEND_ROUND\n-----------------\n");
         correct++;
         percentage = divideAndRound(correct, incorrect + correct);
         // Update correct score or perform other actions as needed
         correctValueElement.textContent = correct.toString();
         percentageValueElement.textContent = percentage.toString();
     } else {
-        console.log("Incorrect!\nEND_ROUND\n");
+        console.log("Incorrect!\nEND_ROUND\n-----------------\n");
         incorrect++;
         percentage = divideAndRound(correct, incorrect + correct);
         // Update incorrect score or perform other actions as needed

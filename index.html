@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
-    <title>value_checker_m1</title>
+    <title>value_checker_mk1</title>
 </head>
 
 <body>
 
-    <h1>Values</h1>
+    <h1>value_checker_mk1</h1>
     <div id="flex">
         <div class="square" id="leftSquare"></div>
         <div class="square" id="rightSquare"></div>
@@ -22,24 +22,39 @@
     </div>
 
     <div class="button-container">
-        <button class="generate-button" id = "resetButton">Reset</button>
+        <button class="generate-button" id = "resetButton">reset</button>
     </div>
+
+
 
     <div class="stat-box">
         <div class="stat-item">
-            <span class="stat-label">Correct:</span>
+            <span class="stat-label">correct:</span>
             <span class="stat-value" id="correct-value">0</span>
         </div>
         <div class="stat-item">
-            <span class="stat-label">Incorrect:</span>
+            <span class="stat-label">incorrect:</span>
             <span class="stat-value" id="incorrect-value">0</span>
         </div>
         <div class="stat-item">
-            <span class="stat-label">Percentage Correct:</span>
+            <span class="stat-label">percentage correct:</span>
             <span class="stat-value" id="percentage-value">0.00%</span>
         </div>
     </div>
 
+    <p>
+        this tool is to test and train colour value checking. choose the square with the HIGHER value.
+    </p>
+
+    <p><em>></em> refers to the left square having a higher value.</p>
+    <p><em>=</em> refers both squares being equal or nearly equal.</p>
+    <p><em><</em> refers to the right square having a higher value.</p>
+
+
+    <div class ="footer">
+    <p>if you would like to support me, you can donate to my BTC address!</p>
+    <p class = "p1">BTC address: bc1q2h4h6s5jc874syg8t456dhk46d5z6suggz0jlx</p>
+    </div>
     <script src="./javascript/javascript.js"></script>
 </body>
 </html>

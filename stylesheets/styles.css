@@ -63,16 +63,10 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
 }
 
 .stat-item {
     margin-bottom: 10px;
-}
-
-.stat-label {
-    font-weight: bold;
-    margin-right: 5px;
 }
 
 .stat-value {
@@ -84,4 +78,20 @@ h1{
 }
 #correct-value {
     color: rgb(53, 255, 53);
+}
+
+p, .p1{
+    font-size: 12px;
+    text-align: center;
+    max-width: 375;
+    margin: auto;
+}
+
+
+.p1{
+    padding-bottom: 20px;
+}
+
+.footer{
+    padding-top: 250px;
 }
