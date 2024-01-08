@@ -5,3 +5,19 @@
     font-family: Arial, sans-serif;
     background-color: #aaa; 
 }
+
+#flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#square
+{
+    flex: 1;
+    max-width: 250px;
+    aspect-ratio: 1;
+    background-color:black;
+    margin:10px;
+}
